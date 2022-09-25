@@ -1,0 +1,549 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+
+/******NAV BAR ******/
+
+.navbar {
+  height: 6rem;
+  background-color: whitesmoke;
+  
+
+  a {
+    font-size: 2rem;
+    margin-left: 3rem;
+  }
+  h1 {
+    font-size: 3rem;
+    margin-left: 2rem;
+  }
+}
+.navbar-brand {
+  letter-spacing: 3px;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.navbar-scroll .navbar-brand,
+.navbar-scroll .nav-link,
+.navbar-scroll .fa-bars {
+  color: black;
+}
+
+.navbar-scroll {
+  box-shadow: none;
+  
+}
+
+.navbar-scrolled {
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
+  
+}
+
+.navbar-scrolled .navbar-brand,
+.navbar-scrolled .nav-link,
+.navbar-scrolled .fa-bars {
+  color: #4f4f4f;
+  
+}
+
+.navbar-scrolled {
+  background-color: black;
+}
+.nav-link {
+  color: black !important;
+}
+.imagenLogoNav {
+  width: 9rem;
+  height: 7rem;
+}
+.display-1 {
+  font-weight: 500 !important;
+  letter-spacing: 40px;
+}
+
+@media (max-width: 450px) {
+  #intro {
+    height: 950px !important;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 750px) {
+  #intro {
+    height: 1100px !important;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 990px) {
+  #intro {
+    height: 600px !important;
+  }
+}
+
+@media (min-width: 1600px) {
+  .display-1 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-scroll {
+    background-color: white;
+  }
+
+  .navbar-scroll .navbar-brand,
+  .navbar-scroll .nav-link,
+  .navbar-scroll .fa-bars {
+    color: #4f4f4f !important;
+  }
+}
+
+/*********** INDEX **********/
+
+
+.mainIndex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+
+  h2 {
+    font-weight: bold;
+    font-size: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
+  h4 {
+    font-size: 2.5rem;
+  }
+  .imagenWhatsapp {
+    width: 11rem;
+    height: 4rem;
+    position: fixed;
+    right: 6rem;
+    top:70rem ;
+    z-index: 10;
+  }
+  .imagenWhatsapp:hover {
+    transition: .8s;
+    transform: scale(2);
+  }
+  .iconoFecha {
+    width: 3rem;
+    height: 2rem;
+  }
+  .cartas {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cartaPlanta {
+    width: 142rem;
+    height: 40.1rem;
+  }
+  .row  {
+    height: 100%;
+  }
+  @media (max-width: 1450px) {
+     
+     
+  }
+  @media (max-width: 800px) {
+  .cartas {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+   }
+
+  }
+ 
+}
+
+/********* FOOTER   *******/
+
+footer {
+  display: flex;
+  background-color: white;
+  width: 100%;
+  justify-content: center;
+  height: 11.5rem;
+  background-image: url(../img/Prueba\ footer2.png);
+  background-size: 40rem;
+  background-repeat: no-repeat;
+  background-color: aliceblue;
+  
+  
+  p {
+    color: gray;
+    font-size: 2rem;
+  }
+  img {
+    width: 2rem;
+    height: 2rem;
+    
+  }
+  li {
+    display: inline;
+  }
+  .contactoIvan {
+    height: 10rem;
+    width: 25rem;
+    margin-top: 1rem;
+    
+    
+    h5 {
+      font-size: 1.5rem;
+      border-bottom: 2px solid black;
+      width: 8rem;
+    }
+    p {
+      font-size: 1.2rem;
+      display: inline;
+    }
+    img {
+      margin-bottom: 2rem;
+      margin-top: 1rem;
+      margin-right: 1rem;
+    }
+    .nombre {
+      height: 3rem;
+    }
+  }
+  .redesSociales {
+    width: 80rem;
+    text-align: center;
+    p {
+      margin-top: 3rem;
+    }
+    img {
+      margin-left: 3rem;
+    }
+  }
+  @media (max-width: 1200px){
+    justify-content: end;
+    .redesSociales {
+      width: 50rem;
+      p {
+      font-size: 1rem;
+     }
+    }
+    .contactoIvan {
+      margin-left: 1rem;
+     }
+    }
+  }
+   
+   
+
+
+/*******************MAIN ABOUT**************/
+
+.mainAbout {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  
+  .contenedor {
+    width: 140rem;
+    height: 50rem;
+    display: flex;
+    margin-top: 15rem;
+    
+    border: 2px solid black;
+    margin-bottom: 12rem;
+    border-radius: 30px;
+    background-color: whitesmoke;
+    
+    
+
+    .bitcoinGif {
+      width: 70rem;
+      height: 49.8rem;
+      border-bottom-left-radius: 25px;
+      border-top-left-radius: 25px;
+    }
+    .textoAbout {
+      font-size: 2rem;
+      color: black;
+      display: flex;
+      align-items: center;
+      padding: 7rem;
+    }
+  } 
+   .imagenJoinUs {
+    img {
+      width: 140rem;
+      height: 15rem;
+      border-radius: 30px;
+    }
+   }
+   .joinUs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      font-size: 7rem;
+      margin-top: 2rem;
+      margin-bottom: 3rem;
+    }
+    h2 {
+      margin-bottom: 2rem;
+      margin-left: 15rem;
+      align-self: flex-start;
+      font-size: 5rem;
+    }
+    p {
+      margin-left: 15rem;
+      align-self: flex-start;
+      font-size: 2rem;
+    }
+   }
+
+}
+
+/********************MAIN NEWS**************/
+
+.mainNews {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10rem;
+  column-gap: 10rem;
+  margin-bottom: 3rem;
+
+  .imagenesNews {
+    width: 100%;
+    height: 100%;
+  }
+  .fila {
+    margin-top: 12rem;
+    height: 40rem;
+  }
+  .card-body:hover {
+   background-color: #2CB5EF;
+   position: relative;
+  }
+  .enlace {
+   position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  }
+  @media (max-width: 1200px){
+   justify-content: space-around;
+   margin-left: 2rem;
+   margin-right: 2rem;
+   }
+  @media (max-width: 756px){
+    justify-content: center;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    .card {
+      margin-top: 2rem;
+    }
+  }
+}
+
+/**************************MAIN SHOP************/
+
+.mainShop {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 100px;
+  margin-bottom: 3rem;
+  p{
+    font-size: 1.2rem;
+    
+  }
+
+  .item1 {
+    border: 0.1px solid blacaliceblue;
+    height: 30rem;
+    width: 60rem;
+    background-color: aliceblue;
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px;
+  }
+  .arriba {
+    text-align: center;
+    height: 20%;
+  }
+  .arriba h3 {
+    font-size: 3rem;
+  }
+  .abajo {
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+  }
+  .derecha {
+    width: 70%;
+    height: 100%;
+  }
+  .derecha img {
+    width: 90%;
+    height: 90%;
+    margin-left: 2rem;
+  }
+  .izquierda {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    align-items: flex-end;
+  }
+  .descripcion {
+    height: 25%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .descripcion button {
+    margin-left: 6rem;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .descripcion img {
+    margin: 2rem;
+    width: 2rem;
+    display: inline;
+  }
+  .descripcion p {
+    display: inline;
+  }
+  .btn {
+    background-color: #13dbfb;
+    width: 10rem;
+    color: black;
+  }
+  @media (max-width: 756px) {
+    .item1 {
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+    .descripcion button {
+      margin-left: 3rem;
+    }
+
+ }
+}
+
+/***************MAIN CONTACT*************/
+
+.mainContact {
+  padding-top: 8rem;
+ h1 {
+  font-size: 5rem;
+  font-weight: bold;
+ }
+ h3 {
+  margin-left: 10rem;
+  font-size: 4rem;
+ }
+ p {
+  margin-left: 10rem;
+  font-size: 1rem;
+ }
+ h2 {
+  margin-top: 1rem;
+  font-size: 5rem;
+  text-decoration: underline;
+ }
+ .bugminer {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 8rem;
+ }
+ .office {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 5rem;
+ }
+ .maps {
+  gap: 5rem;
+  padding: 1rem!important;
+ }
+ .imagenMaps {
+  height: 20rem;
+ }
+ .contact {
+  display: flex;
+  justify-content: center;
+ }
+ .formulario {
+  background-color: #13dbfb;
+  border: 1xp solid #13dbfb;
+  border-radius: 2rem;
+  box-shadow: 2px 2px 12px;
+  width: 38rem;
+  height: 48rem;
+  margin-left: 4.5rem;
+ }
+ .iconosForm {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 1rem;
+ }
+ .nombre {
+  display: flex;
+ }
+ .form-group {
+  width: 40rem;
+  padding-top: 1rem; 
+ }
+ .tituloForm {
+  margin-left: 13rem;
+  font-size:  2rem;
+  font-weight: bold;
+ }
+ .seccionAyuda {
+  height: 7rem;
+  background-color: #13dbfb; 
+  border: 1px solid #13dbfb;
+  border-radius: 2rem;
+  box-shadow: 2px 2px 12px;
+  display: flex;
+  margin-left: 7rem!important;
+  margin-bottom: 8.5rem;
+   section {
+    text-align: center;
+    margin-top: 1.7rem;
+   }
+ }
+ .container {
+  max-width: none!important;
+  row-gap: 1.5rem;
+  padding: 0!important;
+  margin: 0!important;
+ }
+
+ .getHelp {
+  display: flex;
+  justify-content: center;
+ }
+ #message {
+  height: 25rem;
+ }
+}
