@@ -141,6 +141,9 @@ html {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+.mainIndex .card {
+  width: 90%;
+}
 .mainIndex .cartaPlanta {
   width: 142rem;
   height: 40.1rem;
@@ -234,7 +237,7 @@ footer .redesSociales img {
   align-items: center;
 }
 .mainAbout .contenedor {
-  width: 140rem;
+  width: 85%;
   height: 50rem;
   display: flex;
   margin-top: 15rem;
@@ -250,14 +253,17 @@ footer .redesSociales img {
   border-top-left-radius: 25px;
 }
 .mainAbout .contenedor .textoAbout {
-  font-size: 2rem;
+  font-size: 17px;
   color: black;
   display: flex;
   align-items: center;
   padding: 7rem;
 }
+.mainAbout .imagenJoinUs {
+  width: 85%;
+}
 .mainAbout .imagenJoinUs img {
-  width: 140rem;
+  width: 100%;
   height: 15rem;
   border-radius: 30px;
 }
@@ -265,22 +271,78 @@ footer .redesSociales img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 85%;
 }
 .mainAbout .joinUs h1 {
-  font-size: 7rem;
+  font-size: 6rem;
   margin-top: 2rem;
   margin-bottom: 3rem;
 }
 .mainAbout .joinUs h2 {
   margin-bottom: 2rem;
-  margin-left: 15rem;
   align-self: flex-start;
-  font-size: 5rem;
+  font-size: 4rem;
 }
 .mainAbout .joinUs p {
-  margin-left: 15rem;
   align-self: flex-start;
   font-size: 2rem;
+}
+@media (max-width: 1400px) {
+  .mainAbout .contenedor {
+    flex-direction: column;
+    height: 90%;
+  }
+  .mainAbout .bitcoinGif {
+    border-radius: 25px;
+    width: 100% !important;
+  }
+  .mainAbout .joinUs h1 {
+    font-size: 5rem;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+  }
+  .mainAbout .joinUs h2 {
+    font-size: 4rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  .mainAbout .joinUs p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1100px) {
+  .mainAbout .joinUs h1 {
+    font-size: 3rem;
+  }
+  .mainAbout .joinUs h2 {
+    font-size: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  .mainAbout .joinUs p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 756px) {
+  .mainAbout .textoAbout p {
+    font-size: 15px;
+  }
+  .mainAbout .imagenJoinUs img {
+    height: 10rem;
+  }
+  .mainAbout .joinUs h1 {
+    font-size: 25px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  .mainAbout .joinUs h2 {
+    font-size: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  .mainAbout .joinUs p {
+    font-size: 15px;
+  }
 }
 
 /********************MAIN NEWS**************/
@@ -416,19 +478,21 @@ footer .redesSociales img {
 
 /***************MAIN CONTACT*************/
 .mainContact {
+  display: flex;
   padding-top: 8rem;
+  flex-wrap: wrap;
 }
 .mainContact h1 {
   font-size: 5rem;
   font-weight: bold;
 }
 .mainContact h3 {
-  margin-left: 10rem;
   font-size: 4rem;
+  margin-bottom: 2rem;
 }
 .mainContact p {
-  margin-left: 10rem;
-  font-size: 1rem;
+  font-size: 12px;
+  margin-bottom: 2rem;
 }
 .mainContact h2 {
   margin-top: 1rem;
@@ -436,62 +500,72 @@ footer .redesSociales img {
   text-decoration: underline;
 }
 .mainContact .bugminer {
-  display: flex;
-  justify-content: flex-start;
-  padding-left: 8rem;
+  width: 100%;
+  margin-left: 20rem;
+  margin-bottom: 10rem;
 }
 .mainContact .office {
   display: flex;
-  justify-content: space-around;
+  width: 65%;
+  justify-content: center;
+}
+.mainContact .officeCard {
+  width: 100%;
+  display: flex;
   flex-direction: column;
-  gap: 5rem;
+  align-items: center;
 }
-.mainContact .maps {
-  gap: 5rem;
-  padding: 1rem !important;
+.mainContact .officeCard iframe {
+  width: 60%;
+  height: 60%;
 }
-.mainContact .imagenMaps {
-  height: 20rem;
-}
-.mainContact .contact {
+.mainContact .formulario {
+  width: 30%;
+  height: 48rem;
   display: flex;
   justify-content: center;
 }
-.mainContact .formulario {
+.mainContact .contenedorFormulario {
+  width: 90%;
   background-color: #13dbfb;
   border: 1xp solid #13dbfb;
   border-radius: 2rem;
   box-shadow: 2px 2px 12px;
-  width: 38rem;
-  height: 48rem;
-  margin-left: 4.5rem;
+  padding-left: 15px;
 }
 .mainContact .iconosForm {
   width: 2.5rem;
   height: 2.5rem;
   margin-right: 1rem;
 }
-.mainContact .nombre {
+.mainContact .nombreFormulario {
   display: flex;
+  width: 100%;
 }
 .mainContact .form-group {
-  width: 40rem;
+  width: 90%;
   padding-top: 1rem;
 }
 .mainContact .tituloForm {
-  margin-left: 13rem;
   font-size: 2rem;
   font-weight: bold;
 }
+.mainContact .contenedorAyuda {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
 .mainContact .seccionAyuda {
   height: 7rem;
+  width: 88%;
   background-color: #13dbfb;
   border: 1px solid #13dbfb;
   border-radius: 2rem;
   box-shadow: 2px 2px 12px;
   display: flex;
-  margin-left: 7rem !important;
   margin-bottom: 8.5rem;
+  justify-items: center;
 }
 .mainContact .seccionAyuda section {
   text-align: center;
@@ -509,4 +583,40 @@ footer .redesSociales img {
 }
 .mainContact #message {
   height: 25rem;
+}
+@media (max-width: 1200px) {
+  .mainContact .office {
+    flex-direction: column;
+    width: 50%;
+  }
+  .mainContact .formulario {
+    height: 52rem;
+    width: 50%;
+  }
+  .mainContact .bugminer {
+    margin-left: 15rem;
+  }
+}
+@media (max-width: 756px) {
+  .mainContact .office {
+    flex-direction: column;
+    width: 100%;
+    gap: 1.5rem;
+  }
+  .mainContact .formulario {
+    margin-top: 3rem;
+    height: 40rem;
+    width: 100%;
+  }
+  .mainContact #message {
+    height: 15rem;
+  }
+  .mainContact .bugminer {
+    margin-left: 0;
+    text-align: center;
+  }
+  .mainContact .seccionAyuda h4 {
+    font-size: 11px;
+    font-weight: bold;
+  }
 }/*# sourceMappingURL=style.css.map */

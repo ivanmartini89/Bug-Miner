@@ -126,6 +126,7 @@ html {
   h4 {
     font-size: 2.5rem;
   }
+  
   .imagenWhatsapp {
     width: 11rem;
     height: 4rem;
@@ -150,7 +151,9 @@ html {
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
-  
+  .card {
+    width: 90%;
+  }
   .cartaPlanta {
     width: 142rem;
     height: 40.1rem;
@@ -245,6 +248,7 @@ footer {
       margin-left: 1rem;
      }
     }
+    
   }
    
    
@@ -260,11 +264,10 @@ footer {
   
   
   .contenedor {
-    width: 140rem;
+    width: 85%;
     height: 50rem;
     display: flex;
     margin-top: 15rem;
-    
     border: 2px solid black;
     margin-bottom: 12rem;
     border-radius: 30px;
@@ -279,7 +282,7 @@ footer {
       border-top-left-radius: 25px;
     }
     .textoAbout {
-      font-size: 2rem;
+      font-size: 17px;
       color: black;
       display: flex;
       align-items: center;
@@ -287,8 +290,9 @@ footer {
     }
   } 
    .imagenJoinUs {
+      width: 85%;
     img {
-      width: 140rem;
+      width: 100%;
       height: 15rem;
       border-radius: 30px;
     }
@@ -297,24 +301,91 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 85%;
     h1 {
-      font-size: 7rem;
+      font-size: 6rem;
       margin-top: 2rem;
       margin-bottom: 3rem;
     }
     h2 {
       margin-bottom: 2rem;
-      margin-left: 15rem;
+      
       align-self: flex-start;
-      font-size: 5rem;
+      font-size: 4rem;
     }
     p {
-      margin-left: 15rem;
+      
       align-self: flex-start;
       font-size: 2rem;
     }
-   }
+    }
+    @media (max-width: 1400px){
+      .contenedor {
+        flex-direction: column; 
+        height: 90%;
+      }
+  
+      .bitcoinGif {
+        border-radius: 25px;
+        width: 100%!important;
+      }
+      .joinUs {
 
+        h1 {
+          font-size: 5rem;
+          margin-top: 8rem;
+          margin-bottom: 8rem;
+        }
+        h2 {
+          font-size: 4rem;
+          margin-top: 4rem;
+          margin-bottom: 4rem;
+        }
+        p {
+          font-size: 20px;
+        }
+      }
+    }
+    @media (max-width: 1100px){
+      .joinUs {
+        h1 {
+          font-size: 3rem;
+        }
+        h2 {
+          font-size: 3rem;
+          margin-top: 4rem;
+          margin-bottom: 4rem;
+        }
+        p {
+          font-size: 15px;
+        }
+      }
+    }
+    @media (max-width: 756px){
+      .textoAbout {
+        p {
+          font-size: 15px;
+        }
+      }
+      .imagenJoinUs img {
+        height: 10rem;
+      }
+      .joinUs {
+        h1 {
+          font-size: 25px;
+          margin-top: 4rem;
+          margin-bottom: 4rem;
+        }
+        h2 {
+          font-size: 2rem;
+          margin-top: 4rem;
+          margin-bottom: 4rem;
+        }
+        p {
+          font-size: 15px;
+        }
+      }
+    }
 }
 
 /********************MAIN NEWS**************/
@@ -452,18 +523,21 @@ footer {
 /***************MAIN CONTACT*************/
 
 .mainContact {
+  display: flex;  
   padding-top: 8rem;
+  flex-wrap: wrap;
+  
  h1 {
   font-size: 5rem;
   font-weight: bold;
  }
  h3 {
-  margin-left: 10rem;
   font-size: 4rem;
+  margin-bottom: 2rem;
  }
  p {
-  margin-left: 10rem;
-  font-size: 1rem;
+  font-size: 12px;
+  margin-bottom: 2rem;
  }
  h2 {
   margin-top: 1rem;
@@ -471,62 +545,74 @@ footer {
   text-decoration: underline;
  }
  .bugminer {
-  display: flex;
-  justify-content: flex-start;
-  padding-left: 8rem;
+   width: 100%;
+   margin-left: 20rem;
+   margin-bottom: 10rem;
  }
  .office {
   display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  gap: 5rem;
- }
- .maps {
-  gap: 5rem;
-  padding: 1rem!important;
- }
- .imagenMaps {
-  height: 20rem;
- }
- .contact {
-  display: flex;
+  width: 65%;
   justify-content: center;
  }
+ .officeCard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   iframe {
+    width: 60%;
+    height: 60%;
+   }
+ }
+
  .formulario {
+  width: 30%;
+  height: 48rem;
+  display: flex;
+  justify-content: center;
+  
+ }
+ .contenedorFormulario {
+  width: 90%;
   background-color: #13dbfb;
   border: 1xp solid #13dbfb;
   border-radius: 2rem;
   box-shadow: 2px 2px 12px;
-  width: 38rem;
-  height: 48rem;
-  margin-left: 4.5rem;
+  padding-left: 15px;
  }
  .iconosForm {
   width: 2.5rem;
   height: 2.5rem;
   margin-right: 1rem;
  }
- .nombre {
+ .nombreFormulario {
   display: flex;
+  width: 100%;
  }
  .form-group {
-  width: 40rem;
+  width: 90%;
   padding-top: 1rem; 
  }
  .tituloForm {
-  margin-left: 13rem;
   font-size:  2rem;
   font-weight: bold;
  }
+ .contenedorAyuda {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+ }
  .seccionAyuda {
   height: 7rem;
+  width: 88%;
   background-color: #13dbfb; 
   border: 1px solid #13dbfb;
   border-radius: 2rem;
   box-shadow: 2px 2px 12px;
   display: flex;
-  margin-left: 7rem!important;
   margin-bottom: 8.5rem;
+  justify-items: center;
    section {
     text-align: center;
     margin-top: 1.7rem;
@@ -545,5 +631,42 @@ footer {
  }
  #message {
   height: 25rem;
+ }
+ 
+ @media (max-width: 1200px){
+  .office {
+    flex-direction: column;
+    width: 50%;
+  }
+  .formulario {
+    height: 52rem ;
+    width: 50%;
+  }
+  .bugminer {
+    margin-left: 15rem ;
+  }
+ }
+ @media (max-width: 756px){
+  .office {
+    flex-direction: column;
+    width: 100%;
+    gap: 1.5rem;
+  }
+  .formulario {
+    margin-top: 3rem;
+    height: 40rem ;
+    width: 100%;
+  }
+  #message {
+    height: 15rem;
+  }
+  .bugminer {
+    margin-left: 0;
+    text-align: center;
+  }
+  .seccionAyuda h4 {
+    font-size: 11px ;
+    font-weight: bold;
+  }
  }
 }
