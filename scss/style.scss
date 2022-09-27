@@ -21,84 +21,105 @@ html {
     font-size: 3rem;
     margin-left: 2rem;
   }
-}
-.navbar-brand {
-  letter-spacing: 3px;
-  font-size: 2rem;
-  font-weight: 500;
-}
-.navbar-scroll .navbar-brand,
-.navbar-scroll .nav-link,
-.navbar-scroll .fa-bars {
-  color: black;
-}
-
-.navbar-scroll {
-  box-shadow: none;
-  
-}
-
-.navbar-scrolled {
-  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
-  
-}
-
-.navbar-scrolled .navbar-brand,
-.navbar-scrolled .nav-link,
-.navbar-scrolled .fa-bars {
-  color: #4f4f4f;
-  
-}
-
-.navbar-scrolled {
-  background-color: black;
-}
-.nav-link {
-  color: black !important;
-}
-.imagenLogoNav {
-  width: 9rem;
-  height: 7rem;
-}
-.display-1 {
-  font-weight: 500 !important;
-  letter-spacing: 40px;
-}
-
-@media (max-width: 450px) {
-  #intro {
-    height: 950px !important;
+  .navbar-brand {
+    letter-spacing: 3px;
+    font-size: 2rem;
+    font-weight: 500;
   }
-}
-
-@media (min-width: 550px) and (max-width: 750px) {
-  #intro {
-    height: 1100px !important;
+  .navbar-scroll .navbar-brand,
+  .navbar-scroll .nav-link,
+  .navbar-scroll .fa-bars {
+    color: black;
   }
-}
-
-@media (min-width: 800px) and (max-width: 990px) {
-  #intro {
-    height: 600px !important;
+  
+  .navbar-scroll {
+    box-shadow: none;
+    
   }
-}
-
-@media (min-width: 1600px) {
+  
+  .navbar-scrolled {
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
+    
+  }
+  
+  .navbar-scrolled .navbar-brand,
+  .navbar-scrolled .nav-link,
+  .navbar-scrolled .fa-bars {
+    color: #4f4f4f;
+    
+  }
+  
+  .navbar-scrolled {
+    background-color: black;
+  }
+  .nav-link {
+    color: black !important;
+  }
+  .imagenLogoNav {
+    width: 8rem;
+    height: 6rem;
+  }
   .display-1 {
-    font-size: 1rem;
+    font-weight: 500 !important;
+    letter-spacing: 40px;
+  }
+  @media (max-width: 450px) {
+    #intro {
+      height: 950px !important;
+    }
+  }
+  
+  @media (min-width: 550px) and (max-width: 750px) {
+    
+    #intro {
+      height: 1100px !important;
+    }
+  }
+  
+  @media (min-width: 800px) and (max-width: 990px) {
+    .navbar-brand {
+      margin-right: 4rem;
+    }
+    #intro {
+      height: 600px !important;
+    }
+
+  }
+  
+  @media (min-width: 1600px) {
+    .display-1 {
+      font-size: 1rem;
+    }
+  }
+  @media (max-width: 991px) {
+    .navbar-brand {
+      margin-right: 5rem;
+    }
   }
 }
 
 @media (max-width: 991px) {
+  
   .navbar-scroll {
     background-color: white;
   }
-
   .navbar-scroll .navbar-brand,
   .navbar-scroll .nav-link,
   .navbar-scroll .fa-bars {
     color: #4f4f4f !important;
   }
+}
+
+
+/********Carrrousel*******/
+.carrusel {
+  margin-top: 6rem;
+ .carousel-item {
+  height: 30%;
+   img {
+    object-fit: cover;
+   }
+ }
 }
 
 /*********** INDEX **********/
@@ -162,8 +183,9 @@ html {
     height: 100%;
   }
   @media (max-width: 1450px) {
-     
-     
+    .imagenWhatsapp {
+      display: none;
+    }   
   }
   @media (max-width: 800px) {
   .cartas {
@@ -171,10 +193,19 @@ html {
     gap: 2rem;
     align-items: center;
    }
-
   }
- 
-}
+  @media (max-width: 500px){
+    .animate__animated {
+      font-size: 3rem;
+    }
+     .card {
+      width: 30rem!important;
+      margin-bottom: 2rem;
+     }
+    }
+  }
+
+
 
 /********* FOOTER   *******/
 
@@ -247,6 +278,17 @@ footer {
     .contactoIvan {
       margin-left: 1rem;
      }
+    }
+    @media (max-width: 756px){
+      .redesSociales {
+        width: 25rem;
+      p {
+        margin-top: 15px;
+      }
+        img {
+          margin-left: 5px;
+        }
+      }
     }
     
   }
@@ -363,6 +405,7 @@ footer {
     }
     @media (max-width: 756px){
       .textoAbout {
+        padding: 1rem!important;
         p {
           font-size: 15px;
         }
@@ -513,10 +556,24 @@ footer {
       margin-left: 2rem;
       margin-right: 2rem;
     }
-    .descripcion button {
-      margin-left: 3rem;
+    .descripcion {
+    button {
+      margin-left: 0;
+      margin-right: 1rem;
+      
     }
-
+    p {
+      font-size: 10px;
+    } 
+    img {
+      margin: 2px;
+    }
+  }
+  .derecha {
+    img {
+      margin: 1rem;
+    }
+  }
  }
 }
 
@@ -617,6 +674,9 @@ footer {
     text-align: center;
     margin-top: 1.7rem;
    }
+  .inquiries {
+    width: 25%;
+  }
  }
  .container {
   max-width: none!important;
@@ -640,7 +700,7 @@ footer {
   }
   .formulario {
     height: 52rem ;
-    width: 50%;
+    width: 46%;
   }
   .bugminer {
     margin-left: 15rem ;
@@ -667,6 +727,22 @@ footer {
   .seccionAyuda h4 {
     font-size: 11px ;
     font-weight: bold;
+  }
+  @media (max-width: 512px){
+    .seccionAyuda {
+      flex-wrap: wrap;
+      height: 14rem;
+      .inquiries {
+        height: 5rem;
+        width: 50%; 
+      }
+    }
+    .officeCard {
+      p {
+        font-size: 11px;
+      }
+    }
+    
   }
  }
 }

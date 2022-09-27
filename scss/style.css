@@ -20,71 +20,70 @@ html {
   font-size: 3rem;
   margin-left: 2rem;
 }
-
-.navbar-brand {
+.navbar .navbar-brand {
   letter-spacing: 3px;
   font-size: 2rem;
   font-weight: 500;
 }
-
-.navbar-scroll .navbar-brand,
-.navbar-scroll .nav-link,
-.navbar-scroll .fa-bars {
+.navbar .navbar-scroll .navbar-brand,
+.navbar .navbar-scroll .nav-link,
+.navbar .navbar-scroll .fa-bars {
   color: black;
 }
-
-.navbar-scroll {
+.navbar .navbar-scroll {
   box-shadow: none;
 }
-
-.navbar-scrolled {
+.navbar .navbar-scrolled {
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
 }
-
-.navbar-scrolled .navbar-brand,
-.navbar-scrolled .nav-link,
-.navbar-scrolled .fa-bars {
+.navbar .navbar-scrolled .navbar-brand,
+.navbar .navbar-scrolled .nav-link,
+.navbar .navbar-scrolled .fa-bars {
   color: #4f4f4f;
 }
-
-.navbar-scrolled {
+.navbar .navbar-scrolled {
   background-color: black;
 }
-
-.nav-link {
+.navbar .nav-link {
   color: black !important;
 }
-
-.imagenLogoNav {
-  width: 9rem;
-  height: 7rem;
+.navbar .imagenLogoNav {
+  width: 8rem;
+  height: 6rem;
 }
-
-.display-1 {
+.navbar .display-1 {
   font-weight: 500 !important;
   letter-spacing: 40px;
 }
-
 @media (max-width: 450px) {
-  #intro {
+  .navbar #intro {
     height: 950px !important;
   }
 }
 @media (min-width: 550px) and (max-width: 750px) {
-  #intro {
+  .navbar #intro {
     height: 1100px !important;
   }
 }
 @media (min-width: 800px) and (max-width: 990px) {
-  #intro {
+  .navbar .navbar-brand {
+    margin-right: 4rem;
+  }
+  .navbar #intro {
     height: 600px !important;
   }
 }
 @media (min-width: 1600px) {
-  .display-1 {
+  .navbar .display-1 {
     font-size: 1rem;
   }
 }
+@media (max-width: 991px) {
+  .navbar .navbar-brand {
+    margin-right: 5rem;
+  }
+}
+
 @media (max-width: 991px) {
   .navbar-scroll {
     background-color: white;
@@ -95,6 +94,18 @@ html {
     color: #4f4f4f !important;
   }
 }
+/********Carrrousel*******/
+.carrusel {
+  margin-top: 6rem;
+}
+.carrusel .carousel-item {
+  height: 30%;
+}
+.carrusel .carousel-item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 /*********** INDEX **********/
 .mainIndex {
   display: flex;
@@ -151,11 +162,25 @@ html {
 .mainIndex .row {
   height: 100%;
 }
+@media (max-width: 1450px) {
+  .mainIndex .imagenWhatsapp {
+    display: none;
+  }
+}
 @media (max-width: 800px) {
   .mainIndex .cartas {
     flex-direction: column;
     gap: 2rem;
     align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .mainIndex .animate__animated {
+    font-size: 3rem;
+  }
+  .mainIndex .card {
+    width: 30rem !important;
+    margin-bottom: 2rem;
   }
 }
 
@@ -226,6 +251,17 @@ footer .redesSociales img {
   }
   footer .contactoIvan {
     margin-left: 1rem;
+  }
+}
+@media (max-width: 756px) {
+  footer .redesSociales {
+    width: 25rem;
+  }
+  footer .redesSociales p {
+    margin-top: 15px;
+  }
+  footer .redesSociales img {
+    margin-left: 5px;
   }
 }
 
@@ -324,6 +360,9 @@ footer .redesSociales img {
   }
 }
 @media (max-width: 756px) {
+  .mainAbout .textoAbout {
+    padding: 1rem !important;
+  }
   .mainAbout .textoAbout p {
     font-size: 15px;
   }
@@ -472,7 +511,17 @@ footer .redesSociales img {
     margin-right: 2rem;
   }
   .mainShop .descripcion button {
-    margin-left: 3rem;
+    margin-left: 0;
+    margin-right: 1rem;
+  }
+  .mainShop .descripcion p {
+    font-size: 10px;
+  }
+  .mainShop .descripcion img {
+    margin: 2px;
+  }
+  .mainShop .derecha img {
+    margin: 1rem;
   }
 }
 
@@ -571,6 +620,9 @@ footer .redesSociales img {
   text-align: center;
   margin-top: 1.7rem;
 }
+.mainContact .seccionAyuda .inquiries {
+  width: 25%;
+}
 .mainContact .container {
   max-width: none !important;
   row-gap: 1.5rem;
@@ -591,7 +643,7 @@ footer .redesSociales img {
   }
   .mainContact .formulario {
     height: 52rem;
-    width: 50%;
+    width: 46%;
   }
   .mainContact .bugminer {
     margin-left: 15rem;
@@ -618,5 +670,18 @@ footer .redesSociales img {
   .mainContact .seccionAyuda h4 {
     font-size: 11px;
     font-weight: bold;
+  }
+}
+@media (max-width: 756px) and (max-width: 512px) {
+  .mainContact .seccionAyuda {
+    flex-wrap: wrap;
+    height: 14rem;
+  }
+  .mainContact .seccionAyuda .inquiries {
+    height: 5rem;
+    width: 50%;
+  }
+  .mainContact .officeCard p {
+    font-size: 11px;
   }
 }/*# sourceMappingURL=style.css.map */
