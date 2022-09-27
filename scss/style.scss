@@ -1,3 +1,4 @@
+@import "variable";
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +12,6 @@ html {
 .navbar {
   height: 6rem;
   background-color: whitesmoke;
-  
 
   a {
     font-size: 2rem;
@@ -31,24 +31,21 @@ html {
   .navbar-scroll .fa-bars {
     color: black;
   }
-  
+
   .navbar-scroll {
     box-shadow: none;
-    
   }
-  
+
   .navbar-scrolled {
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
-    
   }
-  
+
   .navbar-scrolled .navbar-brand,
   .navbar-scrolled .nav-link,
   .navbar-scrolled .fa-bars {
     color: #4f4f4f;
-    
   }
-  
+
   .navbar-scrolled {
     background-color: black;
   }
@@ -68,22 +65,19 @@ html {
       height: 950px !important;
     }
   }
-  
+
   @media (min-width: 550px) and (max-width: 750px) {
-    
     #intro {
       height: 1100px !important;
     }
   }
-  
+
   @media (min-width: 800px) and (max-width: 990px) {
-    
     #intro {
       height: 600px !important;
     }
-
   }
-  
+
   @media (min-width: 1600px) {
     .display-1 {
       font-size: 1rem;
@@ -94,7 +88,6 @@ html {
       background-color: white;
       width: 15rem;
       margin-left: 86%;
-      
     }
     .navbar-brand {
       margin-right: 5rem;
@@ -102,31 +95,27 @@ html {
   }
   @media (max-width: 800px) {
     .navbar-nav {
-      margin-left: 82%; 
+      margin-left: 82%;
     }
   }
   @media (max-width: 600px) {
     .navbar-nav {
       margin-left: 76%;
-      
     }
   }
   @media (max-width: 500px) {
     .navbar-nav {
       margin-left: 71%;
-      
     }
   }
   @media (max-width: 400px) {
     .navbar-nav {
       margin-left: 68%;
-      
     }
   }
 }
 
 @media (max-width: 991px) {
-
   .navbar-brand {
     margin-right: 4rem;
   }
@@ -140,7 +129,6 @@ html {
   }
 }
 
-
 /********Carrrousel*******/
 .carrusel {
   margin-top: 6rem;
@@ -149,7 +137,7 @@ html {
       width: 100%;
     }
   }
-  
+
   @media (max-width: 800px) {
     .carousel-item {
       video {
@@ -184,7 +172,6 @@ html {
 
 /*********** INDEX **********/
 
-
 .mainIndex {
   display: flex;
   flex-direction: column;
@@ -208,17 +195,17 @@ html {
   h4 {
     font-size: 2.5rem;
   }
-  
+
   .imagenWhatsapp {
     width: 11rem;
     height: 4rem;
     position: fixed;
     right: 6rem;
-    top:70rem ;
+    top: 70rem;
     z-index: 10;
   }
   .imagenWhatsapp:hover {
-    transition: .8s;
+    transition: 0.8s;
     transform: scale(2);
   }
   .iconoFecha {
@@ -240,7 +227,7 @@ html {
     width: 142rem;
     height: 40.1rem;
   }
-  .row  {
+  .row {
     height: 100%;
   }
   @media (max-width: 1450px) {
@@ -249,27 +236,25 @@ html {
     }
     .imagenWhatsapp {
       display: none;
-    }   
+    }
   }
   @media (max-width: 800px) {
-  .cartas {
-    flex-direction: column;
-    gap: 2rem;
-    align-items: center;
-   }
+    .cartas {
+      flex-direction: column;
+      gap: 2rem;
+      align-items: center;
+    }
   }
-  @media (max-width: 500px){
+  @media (max-width: 500px) {
     .animate__animated {
       font-size: 3rem;
     }
-     .card {
-      width: 30rem!important;
+    .card {
+      width: 30rem !important;
       margin-bottom: 2rem;
-     }
     }
   }
-
-
+}
 
 /********* FOOTER   *******/
 
@@ -283,8 +268,7 @@ footer {
   background-size: 40rem;
   background-repeat: no-repeat;
   background-color: aliceblue;
-  
-  
+
   p {
     color: gray;
     font-size: 2rem;
@@ -292,7 +276,6 @@ footer {
   img {
     width: 2rem;
     height: 2rem;
-    
   }
   li {
     display: inline;
@@ -301,8 +284,7 @@ footer {
     height: 10rem;
     width: 25rem;
     margin-top: 1rem;
-    
-    
+
     h5 {
       font-size: 1.5rem;
       border-bottom: 2px solid black;
@@ -331,34 +313,30 @@ footer {
       margin-left: 3rem;
     }
   }
-  @media (max-width: 1200px){
+  @media (max-width: 1200px) {
     justify-content: end;
     .redesSociales {
       width: 50rem;
       p {
-      font-size: 1rem;
-     }
+        font-size: 1rem;
+      }
     }
     .contactoIvan {
       margin-left: 1rem;
-     }
     }
-    @media (max-width: 756px){
-      .redesSociales {
-        width: 25rem;
+  }
+  @media (max-width: 756px) {
+    .redesSociales {
+      width: 25rem;
       p {
         margin-top: 15px;
       }
-        img {
-          margin-left: 5px;
-        }
+      img {
+        margin-left: 5px;
       }
     }
-    
   }
-   
-   
-
+}
 
 /*******************MAIN ABOUT**************/
 
@@ -367,8 +345,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
-  
+
   .contenedor {
     width: 85%;
     height: 50rem;
@@ -378,8 +355,6 @@ footer {
     margin-bottom: 12rem;
     border-radius: 30px;
     background-color: whitesmoke;
-    
-    
 
     .bitcoinGif {
       width: 70rem;
@@ -394,16 +369,16 @@ footer {
       align-items: center;
       padding: 7rem;
     }
-  } 
-   .imagenJoinUs {
-      width: 85%;
+  }
+  .imagenJoinUs {
+    width: 85%;
     img {
       width: 100%;
       height: 15rem;
       border-radius: 30px;
     }
-   }
-   .joinUs {
+  }
+  .joinUs {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -415,84 +390,82 @@ footer {
     }
     h2 {
       margin-bottom: 2rem;
-      
+
       align-self: flex-start;
       font-size: 4rem;
     }
     p {
-      
       align-self: flex-start;
       font-size: 2rem;
     }
+  }
+  @media (max-width: 1400px) {
+    .contenedor {
+      flex-direction: column;
+      height: 90%;
     }
-    @media (max-width: 1400px){
-      .contenedor {
-        flex-direction: column; 
-        height: 90%;
-      }
-  
-      .bitcoinGif {
-        border-radius: 25px;
-        width: 100%!important;
-      }
-      .joinUs {
 
-        h1 {
-          font-size: 5rem;
-          margin-top: 8rem;
-          margin-bottom: 8rem;
-        }
-        h2 {
-          font-size: 4rem;
-          margin-top: 4rem;
-          margin-bottom: 4rem;
-        }
-        p {
-          font-size: 20px;
-        }
+    .bitcoinGif {
+      border-radius: 25px;
+      width: 100% !important;
+    }
+    .joinUs {
+      h1 {
+        font-size: 5rem;
+        margin-top: 8rem;
+        margin-bottom: 8rem;
+      }
+      h2 {
+        font-size: 4rem;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+      }
+      p {
+        font-size: 20px;
       }
     }
-    @media (max-width: 1100px){
-      .joinUs {
-        h1 {
-          font-size: 3rem;
-        }
-        h2 {
-          font-size: 3rem;
-          margin-top: 4rem;
-          margin-bottom: 4rem;
-        }
-        p {
-          font-size: 15px;
-        }
+  }
+  @media (max-width: 1100px) {
+    .joinUs {
+      h1 {
+        font-size: 3rem;
+      }
+      h2 {
+        font-size: 3rem;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+      }
+      p {
+        font-size: 15px;
       }
     }
-    @media (max-width: 756px){
-      .textoAbout {
-        padding: 1rem!important;
-        p {
-          font-size: 15px;
-        }
-      }
-      .imagenJoinUs img {
-        height: 10rem;
-      }
-      .joinUs {
-        h1 {
-          font-size: 25px;
-          margin-top: 4rem;
-          margin-bottom: 4rem;
-        }
-        h2 {
-          font-size: 2rem;
-          margin-top: 4rem;
-          margin-bottom: 4rem;
-        }
-        p {
-          font-size: 15px;
-        }
+  }
+  @media (max-width: 756px) {
+    .textoAbout {
+      padding: 1rem !important;
+      p {
+        font-size: 15px;
       }
     }
+    .imagenJoinUs img {
+      height: 10rem;
+    }
+    .joinUs {
+      h1 {
+        font-size: 25px;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+      }
+      h2 {
+        font-size: 2rem;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+      }
+      p {
+        font-size: 15px;
+      }
+    }
+  }
 }
 
 /********************MAIN NEWS**************/
@@ -513,23 +486,23 @@ footer {
     height: 40rem;
   }
   .card-body:hover {
-   background-color: #2CB5EF;
-   position: relative;
+    background-color: #2cb5ef;
+    position: relative;
   }
   .enlace {
-   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
   }
-  @media (max-width: 1200px){
-   justify-content: space-around;
-   margin-left: 2rem;
-   margin-right: 2rem;
-   }
-  @media (max-width: 756px){
+  @media (max-width: 1200px) {
+    justify-content: space-around;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  @media (max-width: 756px) {
     justify-content: center;
     margin-left: 4rem;
     margin-right: 4rem;
@@ -549,9 +522,8 @@ footer {
   flex-wrap: wrap;
   gap: 100px;
   margin-bottom: 3rem;
-  p{
+  p {
     font-size: 1.2rem;
-    
   }
 
   .item1 {
@@ -621,184 +593,198 @@ footer {
       margin-right: 2rem;
     }
     .descripcion {
-    button {
-      margin-left: 0;
-      margin-right: 1rem;
-      
+      button {
+        margin-left: 0;
+        margin-right: 1rem;
+      }
+      p {
+        font-size: 10px;
+      }
+      img {
+        margin: 2px;
+      }
     }
-    p {
-      font-size: 10px;
-    } 
-    img {
-      margin: 2px;
+    .derecha {
+      img {
+        margin: 1rem;
+      }
     }
   }
-  .derecha {
-    img {
-      margin: 1rem;
-    }
-  }
- }
 }
 
 /***************MAIN CONTACT*************/
 
 .mainContact {
-  display: flex;  
+  display: flex;
   padding-top: 8rem;
   flex-wrap: wrap;
-  
- h1 {
-  font-size: 5rem;
-  font-weight: bold;
- }
- h3 {
-  font-size: 4rem;
-  margin-bottom: 2rem;
- }
- p {
-  font-size: 12px;
-  margin-bottom: 2rem;
- }
- h2 {
-  margin-top: 1rem;
-  font-size: 5rem;
-  text-decoration: underline;
- }
- .bugminer {
-   width: 100%;
-   margin-left: 20rem;
-   margin-bottom: 10rem;
- }
- .office {
-  display: flex;
-  width: 65%;
-  justify-content: center;
- }
- .officeCard {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-   iframe {
-    width: 60%;
-    height: 60%;
-   }
- }
 
- .formulario {
-  width: 30%;
-  height: 48rem;
-  display: flex;
-  justify-content: center;
-  
- }
- .contenedorFormulario {
-  width: 90%;
-  background-color: #13dbfb;
-  border: 1xp solid #13dbfb;
-  border-radius: 2rem;
-  box-shadow: 2px 2px 12px;
-  padding-left: 15px;
- }
- .iconosForm {
-  width: 2.5rem;
-  height: 2.5rem;
-  margin-right: 1rem;
- }
- .nombreFormulario {
-  display: flex;
-  width: 100%;
- }
- .form-group {
-  width: 90%;
-  padding-top: 1rem; 
- }
- .tituloForm {
-  font-size:  2rem;
-  font-weight: bold;
- }
- .contenedorAyuda {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: 3rem;
- }
- .seccionAyuda {
-  height: 7rem;
-  width: 88%;
-  background-color: #13dbfb; 
-  border: 1px solid #13dbfb;
-  border-radius: 2rem;
-  box-shadow: 2px 2px 12px;
-  display: flex;
-  margin-bottom: 8.5rem;
-  justify-items: center;
-   section {
-    text-align: center;
-    margin-top: 1.7rem;
-   }
-  .inquiries {
-    width: 25%;
-  }
- }
- .container {
-  max-width: none!important;
-  row-gap: 1.5rem;
-  padding: 0!important;
-  margin: 0!important;
- }
-
- .getHelp {
-  display: flex;
-  justify-content: center;
- }
- #message {
-  height: 25rem;
- }
- 
- @media (max-width: 1200px){
-  .office {
-    flex-direction: column;
-    width: 50%;
-  }
-  .formulario {
-    height: 52rem ;
-    width: 46%;
-  }
-  .bugminer {
-    margin-left: 15rem ;
-  }
- }
- @media (max-width: 756px){
-  .office {
-    flex-direction: column;
-    width: 100%;
-    gap: 1.5rem;
-  }
-  .formulario {
-    margin-top: 3rem;
-    height: 40rem ;
-    width: 100%;
-  }
-  #message {
-    height: 15rem;
-  }
-  .bugminer {
-    margin-left: 0;
-    text-align: center;
-  }
-  .seccionAyuda h4 {
-    font-size: 11px ;
+  h1 {
+    font-size: 5rem;
     font-weight: bold;
   }
-  @media (max-width: 512px){
+  h3 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+  p {
+    font-size: 12px;
+    margin-bottom: 2rem;
+  }
+  h2 {
+    margin-top: 1rem;
+    font-size: 5rem;
+    text-decoration: underline;
+  }
+  .cajaMensaje {
+    height: 23rem;
+  }
+  .bugminer {
+    width: 100%;
+    margin-left: 20rem;
+    margin-bottom: 10rem;
+  }
+  .office {
+    display: flex;
+    width: 65%;
+    justify-content: center;
+  }
+  .officeCard {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    iframe {
+      width: 60%;
+      height: 60%;
+    }
+  }
+
+  .formulario {
+    width: 30%;
+    height: 48rem;
+    display: flex;
+    justify-content: center;
+  }
+  .contenedorFormulario {
+    width: 90%;
+    background-color: $colorContact;
+    border: 1xp solid $colorContact;
+    border-radius: 2rem;
+    box-shadow: 2px 2px 12px;
+    padding-left: 15px;
+  }
+  .iconosForm {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 1rem;
+  }
+  .nombreFormulario {
+    display: flex;
+    width: 100%;
+  }
+  .form-group {
+    width: 90%;
+    padding-top: 1rem;
+  }
+  .tituloForm {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .contenedorAyuda {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+  .seccionAyuda {
+    height: 7rem;
+    width: 88%;
+    background-color: $colorContact;
+    border: 1px solid $colorContact;
+    border-radius: 2rem;
+    box-shadow: 2px 2px 12px;
+    display: flex;
+    margin-bottom: 8.5rem;
+    justify-items: center;
+    section {
+      text-align: center;
+      margin-top: 1.1rem;
+      h4 {
+        font-size: 2rem;
+      }
+      a {
+        font-size: 1.5rem;
+      }
+    }
+    .inquiries {
+      width: 25%;
+    }
+
+    .container {
+      max-width: none !important;
+      row-gap: 1.5rem;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+
+    .getHelp {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .cajaMensaje {
+      height: 27rem;
+    }
+
+    .office {
+      flex-direction: column;
+      width: 50%;
+    }
+    .formulario {
+      height: 52rem;
+      width: 46%;
+    }
+    .bugminer {
+      margin-left: 15rem;
+    }
+  }
+  @media (max-width: 756px) {
+    .office {
+      flex-direction: column;
+      width: 100%;
+      gap: 1.5rem;
+    }
+    .formulario {
+      margin-top: 3rem;
+      height: 40rem;
+      width: 100%;
+    }
+    #message {
+      height: 15rem;
+    }
+    .bugminer {
+      margin-left: 0;
+      text-align: center;
+    }
+    .seccionAyuda section {
+      h4 {
+        font-size: 1.3rem;
+      }
+      a {
+        font-size: 1.1rem;
+      }
+    }
+  }
+  @media (max-width: 512px) {
     .seccionAyuda {
       flex-wrap: wrap;
       height: 14rem;
       .inquiries {
         height: 5rem;
-        width: 50%; 
+        width: 50%;
       }
     }
     .officeCard {
@@ -806,7 +792,5 @@ footer {
         font-size: 11px;
       }
     }
-    
   }
- }
 }

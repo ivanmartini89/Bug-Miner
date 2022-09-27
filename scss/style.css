@@ -1,3 +1,4 @@
+/****color seccion contacto***/
 * {
   margin: 0;
   padding: 0;
@@ -451,7 +452,7 @@ footer .redesSociales img {
   height: 40rem;
 }
 .mainNews .card-body:hover {
-  background-color: #2CB5EF;
+  background-color: #2cb5ef;
   position: relative;
 }
 .mainNews .enlace {
@@ -597,6 +598,9 @@ footer .redesSociales img {
   font-size: 5rem;
   text-decoration: underline;
 }
+.mainContact .cajaMensaje {
+  height: 23rem;
+}
 .mainContact .bugminer {
   width: 100%;
   margin-left: 20rem;
@@ -625,8 +629,8 @@ footer .redesSociales img {
 }
 .mainContact .contenedorFormulario {
   width: 90%;
-  background-color: #13dbfb;
-  border: 1xp solid #13dbfb;
+  background-color: aliceblue;
+  border: 1xp solid aliceblue;
   border-radius: 2rem;
   box-shadow: 2px 2px 12px;
   padding-left: 15px;
@@ -657,8 +661,8 @@ footer .redesSociales img {
 .mainContact .seccionAyuda {
   height: 7rem;
   width: 88%;
-  background-color: #13dbfb;
-  border: 1px solid #13dbfb;
+  background-color: aliceblue;
+  border: 1px solid aliceblue;
   border-radius: 2rem;
   box-shadow: 2px 2px 12px;
   display: flex;
@@ -667,25 +671,31 @@ footer .redesSociales img {
 }
 .mainContact .seccionAyuda section {
   text-align: center;
-  margin-top: 1.7rem;
+  margin-top: 1.1rem;
+}
+.mainContact .seccionAyuda section h4 {
+  font-size: 2rem;
+}
+.mainContact .seccionAyuda section a {
+  font-size: 1.5rem;
 }
 .mainContact .seccionAyuda .inquiries {
   width: 25%;
 }
-.mainContact .container {
+.mainContact .seccionAyuda .container {
   max-width: none !important;
   row-gap: 1.5rem;
   padding: 0 !important;
   margin: 0 !important;
 }
-.mainContact .getHelp {
+.mainContact .seccionAyuda .getHelp {
   display: flex;
   justify-content: center;
 }
-.mainContact #message {
-  height: 25rem;
-}
 @media (max-width: 1200px) {
+  .mainContact .cajaMensaje {
+    height: 27rem;
+  }
   .mainContact .office {
     flex-direction: column;
     width: 50%;
@@ -716,12 +726,14 @@ footer .redesSociales img {
     margin-left: 0;
     text-align: center;
   }
-  .mainContact .seccionAyuda h4 {
-    font-size: 11px;
-    font-weight: bold;
+  .mainContact .seccionAyuda section h4 {
+    font-size: 1.3rem;
+  }
+  .mainContact .seccionAyuda section a {
+    font-size: 1.1rem;
   }
 }
-@media (max-width: 756px) and (max-width: 512px) {
+@media (max-width: 512px) {
   .mainContact .seccionAyuda {
     flex-wrap: wrap;
     height: 14rem;
