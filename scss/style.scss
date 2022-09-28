@@ -200,8 +200,8 @@ html {
     width: 11rem;
     height: 4rem;
     position: fixed;
-    right: 6rem;
-    top: 70rem;
+    right: 10%;
+    top: 90%;
     z-index: 10;
   }
   .imagenWhatsapp:hover {
@@ -476,6 +476,13 @@ footer {
   margin-left: 10rem;
   column-gap: 10rem;
   margin-bottom: 3rem;
+  h1 {
+    font-size: 6rem;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 11rem;
+    text-align: center;
+  }
 
   .imagenesNews {
     width: 100%;
@@ -509,6 +516,15 @@ footer {
     .card {
       margin-top: 2rem;
     }
+    .tituloNews {
+      font-size: 4rem;
+    }
+  }
+  @media (max-width: 500px) {
+    .tituloNews {
+      font-size: 2rem;
+      margin-top: 9rem;
+    }
   }
 }
 
@@ -522,6 +538,12 @@ footer {
   flex-wrap: wrap;
   gap: 100px;
   margin-bottom: 3rem;
+  h1 {
+    font-size: 6rem;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+  }
   p {
     font-size: 1.2rem;
   }
@@ -587,6 +609,11 @@ footer {
     width: 10rem;
     color: black;
   }
+  @media (max-width: 1000px) {
+    .tituloShop {
+      font-size: 4.5rem;
+    }
+  }
   @media (max-width: 756px) {
     .item1 {
       margin-left: 2rem;
@@ -608,6 +635,11 @@ footer {
       img {
         margin: 1rem;
       }
+    }
+  }
+  @media (max-width: 650px) {
+    .tituloShop {
+      font-size: 3rem;
     }
   }
 }
