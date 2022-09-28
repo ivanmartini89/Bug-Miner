@@ -466,6 +466,15 @@ footer {
       }
     }
   }
+  @media (max-width: 500px) {
+    .contenedor {
+      margin-top: 10rem;
+      
+    }
+    .bitcoinGif {
+       height: 30rem!important;
+    }
+  }
 }
 
 /********************MAIN NEWS**************/

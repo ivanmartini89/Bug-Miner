@@ -433,6 +433,14 @@ footer .redesSociales img {
     font-size: 15px;
   }
 }
+@media (max-width: 500px) {
+  .mainAbout .contenedor {
+    margin-top: 10rem;
+  }
+  .mainAbout .bitcoinGif {
+    height: 30rem !important;
+  }
+}
 
 /********************MAIN NEWS**************/
 .mainNews {
